@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}
+  blog - List of comment
+{% endblock %}
+{% block content %}
+<h3>
+   List of detail for users
+</h3>
+<ul>
+  {% for x in MyUsers %}
+    <li>{{ x.Username }} - {{ x.Email }}</li><br/>
+  {% endfor %}
+</ul>
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}
+  blog - List of all title blog
+{% endblock %}
+{% block content %}
+<h3>List of title for blods </h3>
+<ul>
+  {% for x in mymembers %}
+    <li><a href="blogdetails/{{ x.id }}">{{ x.Title }}</a></li>
+  {% endfor %}
+</ul>
+{% endblock %}
